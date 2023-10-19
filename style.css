@@ -60,7 +60,7 @@
 }
 
 .player {
-    border: 2px solid #fecdd3;
+    border: 2px solid rgba(13,37,72,0.92);
     border-radius: 10px;
     width: 100px;
     height: 35px;
@@ -120,17 +120,15 @@
     width: 150px;
     height: 33px;
     border-radius: 10px;
-    background-color: #ea5a0ca1;
+    background-color: rgba(13,37,72,0.92);
     font-weight: bold;
     color:white;
+    transition: 0.33s;
 }
 
 #restart:hover{
-    border: 3px solid #d946ef;
-    background-color: #ab2200a1;
-    box-shadow: 1px 10px 22px 10px rgba(255,255,255,0.4) inset;
-    -moz-box-shadow: 1px 10px 22px 10px rgba(255,255,255,0.4) inset;
-    -webkit-box-shadow: 1px 10px 22px 10px rgba(255,255,255,0.4) inset;
+    border: 1px solid white;
+    filter: invert(100%);
     cursor: pointer;
 }
 
