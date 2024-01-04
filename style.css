@@ -106,7 +106,9 @@
     cursor: pointer;
     color: white;
     font-size: 3.5em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Courier New', Courier, monospace;
 }
 
