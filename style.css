@@ -19,12 +19,13 @@
 
 .header {
     height: 10vh;
+    background-color: black;
 }
 
 /* MAIN */
 
 .main {
-    height: 80vh;
+    height: 85vh;
     background-image: radial-gradient(circle, #ffffff, #f3f3f3, #e7e7e7, #dbdbdb, #cfcfcf);
     display: flex;
     justify-content: center;
@@ -137,5 +138,21 @@
 /* FOOTER */
 
 .footer {
-    height: 10vh;
+    height: 5vh;
+    background-image: radial-gradient(circle, #000000, #0c0c0c, #141414, #1b1b1b, #212121);
+    color: white;
+    font-family: Helvetica, Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+}
+
+.gitlogo{
+    filter: invert(100%);
+    transition: 0.5s;
+}
+
+.gitlogo:hover{
+    transform: scale(1.05);
 }

@@ -13,7 +13,7 @@ function cacheDom(){
             winningCondition(3, 4, 5);
             winningCondition(6, 7, 8);
             winningCondition(0, 3, 6);
-            winningCondition(1, 4, 6);
+            winningCondition(1, 4, 7);
             winningCondition(2, 5, 8);
             winningCondition(0, 4, 8);
             winningCondition(2, 4, 6);
