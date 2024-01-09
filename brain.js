@@ -6,16 +6,19 @@ function cacheDom(){
     let boxes = Array.from(document.querySelectorAll(".box"));
     boxes.forEach(cul => cul.addEventListener("mousedown", function()
     {
-        cul.textContent = playerOneTurn? "X" : "O";
-        winningCondition(0, 1, 2);
-        winningCondition(3, 4, 5);
-        winningCondition(6, 7, 8);
-        winningCondition(0, 3, 6);
-        winningCondition(1, 4, 6);
-        winningCondition(2, 5, 8);
-        winningCondition(0, 4, 8);
-        winningCondition(2, 4, 6);
-        playerOneTurn=!playerOneTurn;
+        if(cul.textContent == "")
+        {
+            cul.textContent = playerOneTurn? "X" : "O";
+            winningCondition(0, 1, 2);
+            winningCondition(3, 4, 5);
+            winningCondition(6, 7, 8);
+            winningCondition(0, 3, 6);
+            winningCondition(1, 4, 6);
+            winningCondition(2, 5, 8);
+            winningCondition(0, 4, 8);
+            winningCondition(2, 4, 6);
+            playerOneTurn=!playerOneTurn;
+        }
     }
     ));
 }
@@ -55,3 +58,19 @@ function clearBoard()
         board[i].textContent="";
     }
 }
+
+function restartGame()
+{
+    clearBoard();
+    let score1 = document.querySelector("#p1 > p");
+    let score2 = document.querySelector("#p2 > p");
+    score1.textContent="0";
+    score2.textContent="0";
+}
+
+let resButton = document.querySelector("#restart");
+resButton.addEventListener("mousedown", function()
+{
+    restartGame();
+} 
+);
